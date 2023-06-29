@@ -1,0 +1,62 @@
+Question;Answer;Class
+Is the number of arguments specified by the configuration file for a Pod fixed?;"No
+
+
+
+";Close
+What does GKE stands for?;Google Kubernetes Engine;Close
+Which mechanism within the control plane is utilized to impose particular configurations in the Security Context?;Security profiles;Close
+How is called a non-terminating loop that regulates the state of a system.;control loop;Close
+Which specific command is capable of producing keys and CSRs for all control-plane certificates and kubeconfig files?;kubeadm certs generate-csr;Code Commands
+Which command is utilized to display PersistentVolumes in a sorted manner based on their capacity?;kubectl get pv --sort-by=.spec.capacity.storage;Code Commands
+Which command is utilized to retrieve the logs for a pod that were generated within the last hour?;kubectl logs --since=1h;Code Commands
+Why kubectl get rc --namespace=”<namespace_name>” command is used for?;"to list the replication controllers by namespace.
+
+
+
+";Code Commands
+"Provide a catalog of the different services that are offered within Kubernetes.
+";Cluster IP service, Load Balancer service, Node Port service and External Name Creation service.;Multiple
+What are the distinct Kubernetes objects?;"Pods, Deployments, Services, ConfigMaps, Ingress, Secrets
+
+
+
+
+";Multiple
+What are the three modes of Pod Security Admission?;enforce, audit, warn;Multiple
+"Name the initial namespaces from which Kubernetes starts?
+";"Default, kube-system, kube-public
+";Multiple
+What is Kubernetes?;Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation (CNCF). Kubernetes provides a robust and scalable infrastructure for managing containerized workloads across a cluster of machines. It offers features such as automated container deployment, load balancing, self-healing, storage orchestration, and scaling. With Kubernetes, developers and system administrators can effectively manage and scale applications without manual intervention, ensuring high availability and efficient resource utilization.;Open Concept
+Define what is kubelet;The kubelet is a service agent which controls and maintains group pf pods by checking pod specification using Kubernetes. The kubelet runs on each node and allows to communicate between a master node and a slave node.;Open Concept
+What is the relationship between Kubernetes and Docker?;Docker builds the containers and these containers communicate with each other via Kubernetes. So, containers running on multiple hosts can be manually linked and orchestrated using Kubernetes.;Open Concept
+What is a pod in kubernetes?;Pods are high-level structures that wrap one or more containers.;Open Concept
+In the scenario where a company built on monolithic architecture is experiencing issues due to the expansion of their operations, how could they make the transition to microservices and deploy their services in containers?;As the company’s goal is to shift from their monolithic application to microservices, they can end up building piece by piece, in parallel and just switch configurations in the background. Then they can put each of these built-in microservices on the Kubernetes platform. So, they can start by migrating their services once or twice and monitor them to make sure everything is running stable. Once they feel everything is going good, then they can migrate the rest of the application into their Kubernetes cluster.;Situation
+How could a multinational company with an extensively distributed system, comprising of numerous data centers, virtual machines, and a vast workforce involved in diverse tasks, utilize Kubernetes to maintain consistent task management?;"As all of us know that I.T. departments launch thousands of containers, with tasks running across a numerous number of nodes across the world in a distributed system.
+In such a situation the company can use something that offers them agility, scale-out capability, and DevOps practice to the cloud-based applications.
+So, the company can, therefore, use Kubernetes to customize their scheduling architecture and support multiple container formats. This makes it possible for the affinity between container tasks that gives greater efficiency with an extensive support for various container networking solutions and container storage.
+
+";Situation
+Consider a situation where a company desires to update its deployment methods and create a platform that is highly scalable and responsive. How do you believe this company can accomplish this in order to meet the satisfaction of their customers?Consider a situation where a company desires to update its deployment methods and create a platform that is highly scalable and responsive. How do you believe this company can accomplish this in order to meet the satisfaction of their customers?;In order to give millions of clients the digital experience they would expect, the company needs a platform that is scalable, and responsive, so that they could quickly get data to the client website. Now, to do this the company should move from their private data centers (if they are using any) to any cloud environment such as AWS. Not only this, but they should also implement the microservice architecture so that they can start using Docker containers. Once they have the base framework ready, then they can start using the best orchestration platform available i.e. Kubernetes. This would enable the teams to be autonomous in building applications and delivering them very quickly.;Situation
+"As a consultant for a company that utilizes cloud infrastructure, what are some examples of recommended security measures you would suggest implementing for Kubernetes?
+";"Examples of standard Kubernetes security measures include defining resource quotas, support for auditing, restriction of etcd access, regular security updates to the environment, network segmentation, definition of strict resource policies, continuous scanning for security vulnerabilities, and using images from authorized repositories.
+";Situation
+"What distinguishes Docker Compose from Kubernetes?
+";Docker Compose deploys multi-container Docker apps to a single server, while Kubernetes is a production-grade container orchestrator that can run multiple container runtimes, including Docker's, across multiple virtual or physical machines.;Comparison
+"What's the difference between Apache's Mesos and Google's Kubernetes
+";Kubernetes and Apache Mesos are both open-source systems for managing containerized applications in a cluster of machines. Kubernetes is designed to be a general-purpose orchestration system, while Mesos is designed to be a more specialized cluster manager for running distributed systems.;Comparison
+What is the difference of using Kubernetes Deployments vs StatefulSets?;"In Deployment, You specify a PersistentVolumeClaim that is shared by all pod replicas. In other words, shared volume. The backing storage must have ReadWriteMany or ReadOnlyMany accessMode if you have more than one replica pod, while StatefulSet you specify a volumeClaimTemplates so that each replica pod gets a unique PersistentVolumeClaim associated with it. In other words, no shared volume. Here, the backing storage can have ReadWriteOnce accessMode. ";Comparison
+What is the difference between Docker Swarm and Kubernetes in terms of complexity?;Docker Swarm is a lightweight, easy-to-use orchestration tool with limited offerings compared to Kubernetes. In contrast, Kubernetes is complex but powerful and provides self-healing, auto-scaling capabilities out of the box. ;Comparison
+What is the procedure for halting or pausing a pod in Kubernetes?;"Kubernetes doesn't support stop/pause of current state of pod and resume when needed. However, you can still achieve it by having no working deployments which is setting number of replicas to 0.
+kubectl scale --replicas=0 deployment/<your-deployment>";Open proccess
+I have established a Scheduled Job in Kubernetes that runs twice daily based on its predefined schedule. However, I would like to initiate it manually for testing purposes. How i can achieve this?;With: kubectl create job --from=cronjob/<cronjob-name> <job-name> -n <namespace-name>;Open proccess
+What are the steps for Setup a Kubernetes Cluster Using Kubeadm?;"1.- Install container runtime on all nodes- We will be using cri-o.
+2.-Install Kubeadm, Kubelet, and kubectl on all the nodes.
+3.-Initiate Kubeadm control plane configuration on the master node.
+4.-Save the node join command with the token.
+5.-Install the Calico network plugin.
+6.-Join the worker node to the master node (control plane) using the join command.
+7.-Validate all cluster components and nodes.
+8.-Install Kubernetes Metrics Server
+9.-Deploy a sample app and validate the app";Open Proccess
+How can Kubernetes be run on a local machine?;Kubernetes can be run locally using the Minikube tool. It runs a single-node cluster in a VM (virtual machine) on the computer. Therefore, it offers the ideal way for users who have just started learning Kubernetes.;Open proccess
