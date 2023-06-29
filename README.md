@@ -25,19 +25,19 @@ Methods:
 
 Data:
 
-1.- Data retrieve from Kubernetes documentation + live search in google
+- Data retrieve from Kubernetes documentation + live search in google
 Context retrieve methods:
 
-1.- Sentence Embeddings cosine similiraty
+- Sentence Embeddings cosine similiraty
 Data proccesing variables:
 
-Chunk size [1000,2000,4000,8000]
+- Chunk size [1000,2000,4000,8000]
 
-Number of chunks to the context [1,3,5,10]
+- Number of chunks to the context [1,3,5,10]
 
-Answering methods: Open Book QA algorithms:
+Models:
 
-1.- ROBERTA
-2.- FLAN T5
-3.- GPT4ALL
-Propietary model for comparison: Chat gpt3.5-turbo
+1.- Deep Set: RoBERTa-base-Squad2
+2.- Google: Flan-t5-xl
+3.- Nomic AI: GPT4All-LoRa (7B)
+4 .-Open AI: ChatGPT 3.5-turbo
