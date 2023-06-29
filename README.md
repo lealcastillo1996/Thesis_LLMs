@@ -41,10 +41,3 @@ Data proccesing variables:
 3.- Nomic AI: GPT4All-LoRa (7B)
 4 .-Open AI: ChatGPT 3.5-turbo
 
-## Methodology
-
-QA SYSTEM
-
-QA EVALUATION
-
-
