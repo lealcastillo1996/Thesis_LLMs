@@ -41,3 +41,23 @@ Data proccesing variables:
 3.- Nomic AI: GPT4All-LoRa (7B)
 4 .-Open AI: ChatGPT 3.5-turbo
 
+##Working Calendar
+
+The proposed working schedule is:
+<style>
+table {
+  font-size: 30px;
+}
+</style>
+| Week| Task|Description|State|
+| -------- | -------- |  -------- | -------- |
+| Week 1 | **Project initial meeeting** |The first steps in the project will involve discussing the scope and conducting a comprehensive literature review to identify key considerations and potential challenges. |Done ✅
+| Week 2|  **Data collection**   | Since there is no readily available dataset, the data will be collected via web scraping from the documentation available at https://kubernetes.io/.| Done ✅
+| Week 3|  **Open Book QA algorithm development**   | Different techniques for the Open Book QA algorithm will be explored and implemented in code.| Done ✅
+| Week 4|  **Test dataset and evaluation framework development**   | A synthetic test dataset will be generated and different metrics will be proposed to evaluate the results.| Done ✅
+| Week 5|  **manual labeling of results at SUE**   | An API and possible interactive dashboard will be developed meanwhile SUE labels the results of different models to evaluate with human feedback.| Done ✅
+| Week 6|  **Evaluation metrics and Results visualization**   | Evaluation of the models will be conducted, Result visualization code will be developed.| Done ✅
+| Week 7|  **Final feedback implementations and code documentation / Paper literature review and introduction**   | Feedback from the implementation will be added to thee project and code documentationn will be done, the paper writing initial part will be started .| Done ✅
+| Week 8|  **Paper Methodology and Results**   | .| Done ✅
+| Week 9|  **Paper Critical discussion and Conclusion**   | .| Done ✅
+| Week 10|  **Paper format review / Final corrections**   | .| Done ✅
