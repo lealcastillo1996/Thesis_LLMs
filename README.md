@@ -1,5 +1,7 @@
 Jose Enrique Leal Castillo SN:9066381
 
+![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+
 # Title: "Investigating Open Source Transformer Techniques for Question Answering Systems on Cloud Domain: A Comparison with ChatGPT3.5-Turbo"
 
 - **First examiner:** Ioannis Velegrakis
