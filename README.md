@@ -1,6 +1,6 @@
 Jose Enrique Leal Castillo SN:9066381
 
-![Alt text](https://ibb.co/m6VqLWk "a title")
+![d1920023e9990675e99e91369cf12dc9.png](https://imgtr.ee/images/2023/06/30/d1920023e9990675e99e91369cf12dc9.png)
 
 # Title: "Investigating Open Source Transformer Techniques for Question Answering Systems on Cloud Domain: A Comparison with ChatGPT3.5-Turbo"
 
